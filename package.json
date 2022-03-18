@@ -56,6 +56,7 @@
     "build-cjs": "sh ./scripts/build-cjs.sh",
     "build-umd": "sh ./scripts/build-umd.sh",
     "dev": "sh ./scripts/build-esm.sh --watch",
-    "release": "npm run clean && npm run build && npm run lint && npm run test && npm publish"
+    "integration": "npm run clean && npm run build && npm run lint && npm run test",
+    "prepublishOnly": "npm run integration"
   }
 }
