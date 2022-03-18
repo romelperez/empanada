@@ -1,3 +1,5 @@
+![Empanada](https://github.com/romelperez/empanada/raw/main/empanada.jpg)
+
 # Empanada
 
 Simple data mock generator.
