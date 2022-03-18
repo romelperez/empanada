@@ -1,13 +1,13 @@
 {
   "name": "empanada",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publishConfig": {
     "access": "public"
   },
-  "description": "An empanada for your projects",
+  "description": "Simple data mock generator",
   "keywords": [
-    "mock",
     "data",
+    "mock",
     "generator"
   ],
   "homepage": "https://github.com/romelperez/empanada",
