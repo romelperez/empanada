@@ -1,6 +1,6 @@
 {
   "name": "empanada",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "publishConfig": {
     "access": "public"
   },
@@ -55,6 +55,7 @@
     "build-esm": "sh ./scripts/build-esm.sh",
     "build-cjs": "sh ./scripts/build-cjs.sh",
     "build-umd": "sh ./scripts/build-umd.sh",
-    "dev": "sh ./scripts/build-esm.sh --watch"
+    "dev": "sh ./scripts/build-esm.sh --watch",
+    "release": "npm run clean && npm run build && npm run lint && npm run test && npm publish"
   }
 }
