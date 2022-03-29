@@ -24,9 +24,17 @@ Create a string with random words.
 ```ts
 import { createRandomWords } from 'empanada';
 
-console.log(createRandomWords(4)); // Example: "amet nostrud lorem deserunt"
+console.log(createRandomWords(4));
+// "amet nostrud lorem deserunt"
 ```
 
-## License
+### `createRandomEmail(): string`
 
-MIT
+Create a string with a random email address ending in ".com".
+
+```ts
+import { createRandomEmail } from 'empanada';
+
+console.log(createRandomEmail());
+// "consecteturelit@eiusmod.com"
+```
