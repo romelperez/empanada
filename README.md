@@ -11,6 +11,69 @@ Simple data mock generator.
 [![github stars](https://img.shields.io/github/stars/romelperez/empanada.svg?style=social&label=stars)](https://github.com/romelperez/empanada)
 [![license](https://img.shields.io/github/license/romelperez/empanada.svg?maxAge=2592000)](https://github.com/romelperez/empanada/blob/main/LICENSE)
 
+## Installation
+
+```bash
+npm install empanada
+```
+
+## How to use
+
+### CJS
+
+```js
+const { createRandomWords } = require('empanada');
+console.log(createRandomWords());
+```
+
+### ESM
+
+```js
+import { createRandomWords } from 'empanada';
+console.log(createRandomWords());
+```
+
+#### Setup
+
+ESM is supported without fully specified paths.
+
+##### Node
+
+```bash
+node --experimental-specifier-resolution=node ./myapp.mjs
+```
+
+##### Webpack
+
+```js
+// webpack.config.js
+module.exports = {
+  // ...
+  module: {
+    // ...
+    rules: [
+      // ...
+      {
+        test: /\.m?js/,
+        resolve: {
+          fullySpecified: false
+        }
+      }
+    ]
+  }
+};
+```
+
+### UMD
+
+```html
+<script src="https://unpkg.com/empanada@latest/build/umd/empanada.min.js"></script>
+<script>
+  const { createRandomWords } = window.empanada;
+  console.log(createRandomWords());
+</script>
+```
+
 ## API
 
 ### `LOREM_IPSUM: string`
