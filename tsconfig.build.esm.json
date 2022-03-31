@@ -5,6 +5,11 @@
     "declaration": true,
     "incremental": true,
     "outDir": "build/esm",
-    "tsBuildInfoFile": ".tsbuildinfo"
+    "tsBuildInfoFile": ".tsbuildinfo",
+    "plugins": [
+      {
+        "transform": "@build-script/typescript-transformer-append-js-extension"
+      }
+    ]
   }
 }

@@ -23,54 +23,28 @@ npm install empanada
 
 ```js
 const { createRandomWords } = require('empanada');
-console.log(createRandomWords());
 ```
 
 ### ESM
 
 ```js
 import { createRandomWords } from 'empanada';
-console.log(createRandomWords());
-```
-
-#### Setup
-
-ESM is supported without fully specified paths.
-
-##### Node
-
-```bash
-node --experimental-specifier-resolution=node ./myapp.mjs
-```
-
-##### Webpack
-
-```js
-// webpack.config.js
-module.exports = {
-  // ...
-  module: {
-    // ...
-    rules: [
-      // ...
-      {
-        test: /\.m?js/,
-        resolve: {
-          fullySpecified: false
-        }
-      }
-    ]
-  }
-};
 ```
 
 ### UMD
+
+#### Node/Bundler
+
+```js
+import { createRandomWords } from 'empanada/build/umd/empanada.min.js';
+```
+
+#### Browser
 
 ```html
 <script src="https://unpkg.com/empanada@latest/build/umd/empanada.min.js"></script>
 <script>
   const { createRandomWords } = window.empanada;
-  console.log(createRandomWords());
 </script>
 ```
 
