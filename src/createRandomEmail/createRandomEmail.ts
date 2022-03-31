@@ -1,4 +1,4 @@
-import { createRandomWords } from '../createRandomWords';
+import { createRandomWords } from '../createRandomWords/createRandomWords';
 
 const createRandomEmail = (): string => {
   const nameLength = 1 + Math.round(Math.random());

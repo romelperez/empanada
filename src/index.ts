@@ -1,3 +1,3 @@
 export * from './constants';
-export * from './createRandomWords';
-export * from './createRandomEmail';
+export * from './createRandomWords/createRandomWords';
+export * from './createRandomEmail/createRandomEmail';
