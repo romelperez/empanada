@@ -7,7 +7,8 @@
     "skipLibCheck": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "importHelpers": false,
+    "removeComments": true,
+    "importHelpers": true,
     "baseUrl": ".",
     "rootDir": "src",
     "paths": {}

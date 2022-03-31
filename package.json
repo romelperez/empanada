@@ -18,8 +18,8 @@
   "funding": "https://github.com/sponsors/romelperez",
   "license": "MIT",
   "engines": {
-    "node": "^16.14",
-    "npm": "^8.3"
+    "node": ">=16.14",
+    "npm": ">=8.3"
   },
   "files": [
     "build"
@@ -34,6 +34,9 @@
   "module": "./build/esm/index.js",
   "main": "./build/cjs/index.js",
   "unpkg": "./build/umd/empanada.min.js",
+  "dependencies": {
+    "tslib": "2.x.x"
+  },
   "devDependencies": {
     "@types/jest": "^27.4.1",
     "cross-env": "^7.0.3",
@@ -56,7 +59,8 @@
     "build-cjs": "sh ./scripts/build-cjs.sh",
     "build-umd": "sh ./scripts/build-umd.sh",
     "dev": "sh ./scripts/build-esm.sh --watch",
-    "integration": "npm run clean && npm run build && npm run lint && npm run test",
+    "e2e": "sh ./scripts/e2e.sh",
+    "integration": "npm run clean && npm run build && npm run lint && npm run test && npm run e2e",
     "prepublishOnly": "npm run integration"
   }
 }
