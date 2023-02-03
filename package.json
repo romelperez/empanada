@@ -8,7 +8,9 @@
   "keywords": [
     "data",
     "mock",
-    "generator"
+    "generator",
+    "javascript",
+    "typescript"
   ],
   "homepage": "https://github.com/romelperez/empanada",
   "repository": {
@@ -17,10 +19,6 @@
   },
   "funding": "https://github.com/sponsors/romelperez",
   "license": "MIT",
-  "engines": {
-    "node": ">=16.14",
-    "npm": ">=8.3"
-  },
   "files": [
     "build"
   ],
